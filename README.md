@@ -6,9 +6,9 @@ This repository contains the worksheets and assignments for the STAT545B class.
 ## Milestones
 
 - [x] Assignment 1: Due November 2, 2021
-- [] Assignment 2: Due November 20, 2021 
-- [] Assignment 3: Due November 27, 2021
-- [] Assignment 4: Due December 8, 2021
+- [ ] Assignment 2: Due November 20, 2021 
+- [ ] Assignment 3: Due November 27, 2021
+- [ ] Assignment 4: Due December 8, 2021
 
 ## Learning Objectives 
 
