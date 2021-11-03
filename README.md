@@ -27,7 +27,7 @@ This repository contains the worksheets and assignments for the STAT545B class.
 
 ## Description of files/directories within this repository
 
-I have 2 files for each Assignment:
+I have one folder for each Assignment:
 
 | File name | Description |
 | :--- | ---: |
