@@ -1,24 +1,22 @@
----
-title: "Assignment-B1"
-author: "Irem YUCEL"
-date: "01/11/2021"
-output: github_document
-editor_options: 
-  chunk_output_type: console
----
-
+Assignment-B1
+================
+Irem YUCEL
+01/11/2021
 
 ## Exercise 1: Make a function and Exercise 2: Document your Function
 
-I used the below code snippet frequently, so I want to make this a function. The code does the following:
+I used the below code snippet frequently, so I want to make this a
+function. The code does the following:
 
-1) Takes a column x from the data frame data
-2) Removes the NA values
-3) Counts the number of observations for each level of the column
-4) Arranges in the descending order
-5) Takes the top n categories with the most number of observations.
+1)  Takes a column x from the data frame data
+2)  Removes the NA values
+3)  Counts the number of observations for each level of the column
+4)  Arranges in the descending order
+5)  Takes the top n categories with the most number of observations.
 
-```{r, message = FALSE}
+<!-- end list -->
+
+``` r
 library(tibble)
 library(dplyr)
 library(tidyr)
@@ -63,7 +61,15 @@ test_snippet = ex_data %>%
   top_n(2)
 
 print(test_snippet)
+```
 
+    ## # A tibble: 2 × 2
+    ##   x         n
+    ##   <chr> <int>
+    ## 1 c         7
+    ## 2 b         5
+
+``` r
 #Converting the snippet to a function
 
 #' @title Column top n
@@ -87,51 +93,101 @@ column_top_n <- function(data, col, n){
   arrange(desc(c)) %>%
   top_n(n)
 }
-
-
 ```
 
 ## Exercise 3: Include examples
 
-```{r}
-
+``` r
 column_top_n(ex_data, x, 2) #Example data I generated
-
-column_top_n(vancouver_trees, genus_name, 3)#Vancouver trees data from datateachr package, returns the top 3 most common genus type
-
-column_top_n(cancer_sample, diagnosis, 2) #Cancer sample data from datateachr package, in this case, the function is used to return the number of observations since there are 2 categories.
-
 ```
+
+    ## Selecting by c
+
+    ## # A tibble: 2 × 2
+    ##   x         c
+    ##   <chr> <int>
+    ## 1 c         7
+    ## 2 b         5
+
+``` r
+column_top_n(vancouver_trees, genus_name, 3)#Vancouver trees data from datateachr package, returns the top 3 most common genus type
+```
+
+    ## Selecting by c
+
+    ## # A tibble: 3 × 2
+    ##   genus_name     c
+    ##   <chr>      <int>
+    ## 1 ACER       36062
+    ## 2 PRUNUS     30683
+    ## 3 FRAXINUS    7381
+
+``` r
+column_top_n(cancer_sample, diagnosis, 2) #Cancer sample data from datateachr package, in this case, the function is used to return the number of observations since there are 2 categories.
+```
+
+    ## Selecting by c
+
+    ## # A tibble: 2 × 2
+    ##   diagnosis     c
+    ##   <chr>     <int>
+    ## 1 B           357
+    ## 2 M           212
 
 ## Exercise 4: Test Function
 
-```{r}
-
+``` r
 #Test: Correct output
 cancer_test <- data.frame(table(cancer_sample$diagnosis))
 print(cancer_test)
+```
 
+    ##   Var1 Freq
+    ## 1    B  357
+    ## 2    M  212
+
+``` r
 test1 <- column_top_n(cancer_sample, diagnosis, 2)
-print(test1)
+```
 
+    ## Selecting by c
+
+``` r
+print(test1)
+```
+
+    ## # A tibble: 2 × 2
+    ##   diagnosis     c
+    ##   <chr>     <int>
+    ## 1 B           357
+    ## 2 M           212
+
+``` r
 test_that("Check output", {
   expect_equal(cancer_test$Freq[cancer_test$Var1=="A"],  
     test1$c[test1$diagnosis=="A"]) 
   expect_equal(cancer_test$Freq[cancer_test$Var1=="B"],  
     test1$c[test1$diagnosis=="B"])
 })
+```
 
+    ## Test passed 😸
 
+``` r
 #Test: Large n given as input:
 test_that("Large n", {
   expect_error(column_top_n(ex_data, x, 40))
 })
+```
 
+    ## Test passed 😸
+
+``` r
 #Test: Expect each of unique values in given column is included in fr
 test_that("Row Length", {
   expect_true(nrow(data.frame(table(vancouver_trees$genus_name))) == n_distinct(vancouver_trees$genus_name, na.rm = T))
   
 })
-
 ```
 
+    ## Test passed 🌈
