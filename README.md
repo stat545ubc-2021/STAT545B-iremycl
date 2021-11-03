@@ -3,7 +3,7 @@
 
 This repository contains the worksheets and assignments for the STAT545B class.
 
-## Milestones
+## Assignments
 
 - [x] Assignment 1: Due November 2, 2021
 - [ ] Assignment 2: Due November 20, 2021 
@@ -16,13 +16,13 @@ This repository contains the worksheets and assignments for the STAT545B class.
 
 * This assignment covers making a function in R, documenting it, and testing it.
 
-### Milestone 2
+### Assignment B-2
 
 
-### Milestone 3
+### Assignment B-3
 
 
-### Milestone 4
+### Assignment B-4
 
 
 ## Description of files/directories within this repository
@@ -60,7 +60,7 @@ In each file, I have README, Markdown and R Markdown files:
 
 | File name | Description |
 | :--- | ---: |
-| `README.md` | README file to describe the milestones and files in the repository. |
+| `README.md` | README file to describe the assignments and files in the repository. |
 | `Assignment-B1_files` | Directory containing files for `Assignment-B1.md` | 
 | `Assignment-B2_files` | Directory containing files for `Assignment-B2.md` | 
 | `Assignment-B3_files` | Directory containing files for `Assignment-B3.md` | 
