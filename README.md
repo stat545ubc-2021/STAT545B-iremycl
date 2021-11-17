@@ -27,7 +27,7 @@ This repository contains the worksheets and assignments for the STAT545B class.
 
 ## Description of files/directories within this repository
 
-I have 2 files for each Assignment:
+I have one folder for each Assignment:
 
 | File name | Description |
 | :--- | ---: |
@@ -52,18 +52,14 @@ In each file, I have README, Markdown and R Markdown files:
 | File name | Description |
 | :--- | ---: |
 | `Assignment-B1.Rmd` | R Markdown of `Assignment-B1.md` |
-| `Assignment-B2.Rmd` | R Markdown of `Assignment-B2.md` |
-| `Assignment-B3.Rmd` | R Markdown of `Assignment-B3.md` |
-| `Assignment-B4.Rmd` | R Markdown of `Assignment-B4.md` |
+| `Assignment-B2.Rmd` | - |
+| `Assignment-B3.Rmd` | - |
+| `Assignment-B4.Rmd` | - |
 
 ### Other files/directories
 
 | File name | Description |
 | :--- | ---: |
 | `README.md` | README file to describe the assignments and files in the repository. |
-| `Assignment-B1_files` | Directory containing files for `Assignment-B1.md` | 
-| `Assignment-B2_files` | Directory containing files for `Assignment-B2.md` | 
-| `Assignment-B3_files` | Directory containing files for `Assignment-B3.md` | 
-| `Assignment-B4_files` | Directory containing files for `Assignment-B4.md` | 
 | `.gitignore` | Git instructions about the files to ignore | 
 
