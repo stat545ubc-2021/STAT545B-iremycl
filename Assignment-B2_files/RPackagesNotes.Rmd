@@ -1,0 +1,33 @@
+---
+title: "CreateaPackageNotes"
+author: "Irem YUCEL"
+date: "17/11/2021"
+output: html_document
+---
+
+```{r}
+library(devtools)
+create_package("/Users/iremyucel/Desktop/STAT545/STAT545B-iremycl/Assignment-B2_files/columnTopN") #Created a repository with R man and DESCRIPTION
+
+#On the new Rsession
+library(devtools)
+use_git() #turn that into a git repository
+use_r("column_top_n") #Made the new .R file. ! function per .R file, use_r("cube") to make a new function called cube
+document() #To render the documentation
+
+use_test("column_top_n")
+
+#edit the descriptoin file manually
+#Save and run
+use_mit_license()
+
+#For dependencies
+use_package("datateachr")
+use_package("dplyr")
+use_package("tidyr")
+use_readme_rmd() #devtools to make an readme.rmd file for you
+#Edit the readme manually
+build_readme()
+
+```
+
