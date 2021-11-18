@@ -6,7 +6,7 @@ This repository contains the worksheets and assignments for the STAT545B class.
 ## Assignments
 
 - [x] Assignment 1: Due November 2, 2021
-- [ ] Assignment 2: Due November 20, 2021 
+- [x] Assignment 2: Due November 20, 2021 
 - [ ] Assignment 3: Due November 27, 2021
 - [ ] Assignment 4: Due December 8, 2021
 
@@ -18,6 +18,7 @@ This repository contains the worksheets and assignments for the STAT545B class.
 
 ### Assignment B-2
 
+* This assignment covers how to make an R package using devtools package. I used the function from Assignment 1 to create a package called columnTopN.
 
 ### Assignment B-3
 
@@ -32,18 +33,15 @@ I have one folder for each Assignment:
 | File name | Description |
 | :--- | ---: |
 | `Assignment-B1_files` | Contains Markdown and R Markdown files for Assignment-B1 |
-| `Assignment-B2_files` | - |
+| `ColumnTopN` | ColumnTopN package files such as NAMESPACE, DESCRIPTION, README.Rmd, R, tests and man |
 | `Assignment-B3_files` | - |
 | `Assignment-B4_files` | - |
-
-In each file, I have README, Markdown and R Markdown files:
 
 ### Markdown files
 
 | File name | Description |
 | :--- | ---: |
 | `Assignment-B1.md` | Markdown file containing results for Assignment-B1 |
-| `Assignment-B2.md` | - |
 | `Assignment-B3.md` | - |
 | `Assignment-B4.md` | - |
 
@@ -52,7 +50,6 @@ In each file, I have README, Markdown and R Markdown files:
 | File name | Description |
 | :--- | ---: |
 | `Assignment-B1.Rmd` | R Markdown of `Assignment-B1.md` |
-| `Assignment-B2.Rmd` | - |
 | `Assignment-B3.Rmd` | - |
 | `Assignment-B4.Rmd` | - |
 
