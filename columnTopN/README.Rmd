@@ -25,7 +25,8 @@ Given a data and a column, this function counts the number of observations for e
 You can install the released version of columnTopN from [GitHub](https://github.com/) with:
 
 ``` {r}
-devtools::install_github("https://github.com/stat545ubc-2021/STAT545B-iremycl/tree/main/Assignment-B2_files/columnTopN")
+library(devtools)
+install_github("stat545ubc-2021/STAT545B-iremycl/columnTopN/")
 ```
 ## Example
 
