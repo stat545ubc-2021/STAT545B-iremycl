@@ -1,16 +1,22 @@
 Package: columnTopN
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Return the top N most occurent observations of a dataframe column.
+Version: 0.0.1.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Irem",
+           family = "Yucel",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "iremycl@student.ubc.ca",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Given a data and a column, this function counts the number of observations for each factor of the column levels and returns the top n with the most observations. If n is equal to the number of levels, then returns the number of observation for each level.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    tidyr,
+    datateachr,
+    dplyr

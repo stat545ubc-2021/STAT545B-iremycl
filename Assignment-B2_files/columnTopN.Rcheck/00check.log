@@ -1,0 +1,16 @@
+* using log directory ‘/Users/iremyucel/Desktop/STAT545/STAT545B-iremycl/Assignment-B2_files/columnTopN.Rcheck’
+* using R version 4.0.3 (2020-10-10)
+* using platform: x86_64-apple-darwin17.0 (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘columnTopN/DESCRIPTION’ ... OK
+* this is package ‘columnTopN’ version ‘0.0.0.9000’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Namespace dependencies not required: 'datateachr', 'dplyr', 'tidyr'
+
+See section ‘The DESCRIPTION file’ in the ‘Writing R Extensions’
+manual.
+* DONE
+Status: 1 ERROR

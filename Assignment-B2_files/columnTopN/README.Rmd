@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# columnTopN
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Given a data and a column, this function counts the number of observations for each factor of the column levels and returns the top n with the most observations. If n is equal to the number of levels, then returns the number of observation for each level.
+
+## Installation
+
+You can install the released version of columnTopN from [GitHub](https://github.com/) with:
+
+``` {r}
+devtools::install_github("https://github.com/stat545ubc-2021/STAT545B-iremycl/tree/main/Assignment-B2_files/columnTopN")
+```
+## Example
+
+This is a basic example using the Vancouver trees data from datateachr package. The function returns the top 3 most common genus type
+
+```{r example}
+library(columnTopN)
+library(datateachr)
+column_top_n(vancouver_trees, genus_name, 3)
+```
+
